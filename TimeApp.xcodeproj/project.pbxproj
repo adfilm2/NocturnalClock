@@ -21,6 +21,8 @@
 		0E3C236F2669844B00B6CCEE /* TimeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C236B2669844A00B6CCEE /* TimeWidget.intentdefinition */; };
 		0E3C23702669844B00B6CCEE /* TimeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C236B2669844A00B6CCEE /* TimeWidget.intentdefinition */; };
 		0E3C23732669844B00B6CCEE /* TimeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E3C23622669844A00B6CCEE /* TimeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		360C8F6A44085A0B50ED5AF8 /* Pods_TimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52CE2FF20A48A514285E199 /* Pods_TimeApp.framework */; };
+		A3CB5DDEA4AC4BB26D1102D2 /* Pods_TimeWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78001A73AD41639EF5F37B94 /* Pods_TimeWidgetExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,12 @@
 		0E3C236B2669844A00B6CCEE /* TimeWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TimeWidget.intentdefinition; sourceTree = "<group>"; };
 		0E3C236C2669844B00B6CCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E3C236E2669844B00B6CCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3823A0BA7537029763FF4637 /* Pods-TimeWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-TimeWidgetExtension/Pods-TimeWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		78001A73AD41639EF5F37B94 /* Pods_TimeWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A514F80E512745790032D4FE /* Pods-TimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.release.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC0EB5465D31E43D90EFC3A6 /* Pods-TimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeApp/Pods-TimeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B52CE2FF20A48A514285E199 /* Pods_TimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F23FE35A55C3F7E06912AE /* Pods-TimeWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-TimeWidgetExtension/Pods-TimeWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360C8F6A44085A0B50ED5AF8 /* Pods_TimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,7 @@
 			files = (
 				0E3C23672669844A00B6CCEE /* SwiftUI.framework in Frameworks */,
 				0E3C23652669844A00B6CCEE /* WidgetKit.framework in Frameworks */,
+				A3CB5DDEA4AC4BB26D1102D2 /* Pods_TimeWidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +103,7 @@
 				0E3C23682669844A00B6CCEE /* TimeWidget */,
 				0E3C23632669844A00B6CCEE /* Frameworks */,
 				0E3C23442669839500B6CCEE /* Products */,
+				4F74022CB48AF8F6D5E4536C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +136,8 @@
 			children = (
 				0E3C23642669844A00B6CCEE /* WidgetKit.framework */,
 				0E3C23662669844A00B6CCEE /* SwiftUI.framework */,
+				B52CE2FF20A48A514285E199 /* Pods_TimeApp.framework */,
+				78001A73AD41639EF5F37B94 /* Pods_TimeWidgetExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +153,18 @@
 			path = TimeWidget;
 			sourceTree = "<group>";
 		};
+		4F74022CB48AF8F6D5E4536C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC0EB5465D31E43D90EFC3A6 /* Pods-TimeApp.debug.xcconfig */,
+				A514F80E512745790032D4FE /* Pods-TimeApp.release.xcconfig */,
+				D8F23FE35A55C3F7E06912AE /* Pods-TimeWidgetExtension.debug.xcconfig */,
+				3823A0BA7537029763FF4637 /* Pods-TimeWidgetExtension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E3C235A2669839700B6CCEE /* Build configuration list for PBXNativeTarget "TimeApp" */;
 			buildPhases = (
+				B967032114124C02587B97C9 /* [CP] Check Pods Manifest.lock */,
 				0E3C233F2669839500B6CCEE /* Sources */,
 				0E3C23402669839500B6CCEE /* Frameworks */,
 				0E3C23412669839500B6CCEE /* Resources */,
 				0E3C23772669844B00B6CCEE /* Embed App Extensions */,
+				69CB3300A54D1FA380246E66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E3C23742669844B00B6CCEE /* Build configuration list for PBXNativeTarget "TimeWidgetExtension" */;
 			buildPhases = (
+				7803FBEC1622F1F7EEC80F36 /* [CP] Check Pods Manifest.lock */,
 				0E3C235E2669844A00B6CCEE /* Sources */,
 				0E3C235F2669844A00B6CCEE /* Frameworks */,
 				0E3C23602669844A00B6CCEE /* Resources */,
@@ -235,6 +263,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69CB3300A54D1FA380246E66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeApp/Pods-TimeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7803FBEC1622F1F7EEC80F36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B967032114124C02587B97C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E3C233F2669839500B6CCEE /* Sources */ = {
@@ -406,6 +498,7 @@
 		};
 		0E3C235B2669839700B6CCEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0EB5465D31E43D90EFC3A6 /* Pods-TimeApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -425,6 +518,7 @@
 		};
 		0E3C235C2669839700B6CCEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A514F80E512745790032D4FE /* Pods-TimeApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -444,6 +538,7 @@
 		};
 		0E3C23752669844B00B6CCEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F23FE35A55C3F7E06912AE /* Pods-TimeWidgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -464,6 +559,7 @@
 		};
 		0E3C23762669844B00B6CCEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3823A0BA7537029763FF4637 /* Pods-TimeWidgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
