@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -96,6 +96,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E30E486267B853F0002EFDD /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0E30E488267B85500002EFDD /* MyPage */,
+				0E30E487267B85460002EFDD /* Main */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0E30E487267B85460002EFDD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0E3C234A2669839500B6CCEE /* ViewController.swift */,
+				0E3C234C2669839500B6CCEE /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0E30E488267B85500002EFDD /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		0E30E489267B90220002EFDD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0E3C23462669839500B6CCEE /* AppDelegate.swift */,
+				0E3C23482669839500B6CCEE /* SceneDelegate.swift */,
+				0E3C23522669839700B6CCEE /* Assets.xcassets */,
+				0E3C23542669839700B6CCEE /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		0E3C233A2669839500B6CCEE = {
 			isa = PBXGroup;
 			children = (
@@ -119,13 +155,9 @@
 		0E3C23452669839500B6CCEE /* TimeApp */ = {
 			isa = PBXGroup;
 			children = (
-				0E3C23462669839500B6CCEE /* AppDelegate.swift */,
-				0E3C23482669839500B6CCEE /* SceneDelegate.swift */,
-				0E3C234A2669839500B6CCEE /* ViewController.swift */,
-				0E3C234C2669839500B6CCEE /* Main.storyboard */,
-				0E3C23522669839700B6CCEE /* Assets.xcassets */,
-				0E3C23542669839700B6CCEE /* LaunchScreen.storyboard */,
 				0E3C23572669839700B6CCEE /* Info.plist */,
+				0E30E486267B853F0002EFDD /* Screen */,
+				0E30E489267B90220002EFDD /* Support */,
 				0E3C234F2669839500B6CCEE /* TimeApp.xcdatamodeld */,
 			);
 			path = TimeApp;
@@ -161,7 +193,6 @@
 				D8F23FE35A55C3F7E06912AE /* Pods-TimeWidgetExtension.debug.xcconfig */,
 				3823A0BA7537029763FF4637 /* Pods-TimeWidgetExtension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
